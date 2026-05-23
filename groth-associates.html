@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en" class="text-center">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Groth & Associates | Groth & Associates</title>
+    <meta name="description" content="Groth & Associates">
+    <meta name="theme-color" content="#0d296b">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.google.com/s2/favicons?domain=grothlaw.com&sz=64">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Groth & Associates | Groth & Associates">
+    <meta property="og:description" content="Groth & Associates">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiOjLqur5Z_KEq_I4Cjtc2sdsWKQNynPHsvLKZO7aEZyZ4ECEYqn6Q7QyoaFYiQB218xH2u6KI6SlDvPXxq711AT8qelzY_LpDoD54n-SSPmia7CHhzK3vtZ6T5x1fR1mFjFg3=w1351">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiOjLqur5Z_KEq_I4Cjtc2sdsWKQNynPHsvLKZO7aEZyZ4ECEYqn6Q7QyoaFYiQB218xH2u6KI6SlDvPXxq711AT8qelzY_LpDoD54n-SSPmia7CHhzK3vtZ6T5x1fR1mFjFg3=w1351">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+    /* Ensure visually-hidden works even if Bootstrap CSS fails to load */
+    .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    :root {
+        --brand:#0d296b;
+        --brand-600:#0b235b;
+        --ink:#0f172a;
+        --surface:#f7f9fc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        margin-top: 0;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: #0e0e0e;
+        color: var(--ink);
+    }
+
+    .hero-title, h1, h2, h3 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: .2px;
+    }
+    .hero-title { font-size: clamp(2.6rem, 6vw, 4rem); }
+    h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
+
+    a.inline-link { text-decoration: underline; text-underline-offset: 3px; }
+
+    #mainHeader {
+        position: fixed; top: 0; right: 0; left: 0; z-index: 2000;
+        background: rgba(13,41,107,0);
+        transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, border-color .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+    #mainHeader.scrolled {
+        background: rgba(13,41,107,.65);
+        box-shadow: 0 6px 18px rgba(0,0,0,.25);
+        backdrop-filter: saturate(140%) blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+
+    .hero-section { padding-top: 100px; position: relative; color: #fff; overflow: hidden; min-height: 400px; }
+    .hero-section::before {
+        content:""; position:absolute; inset:0;
+        background: radial-gradient(1200px 600px at 60% 20%, rgba(255,255,255,.07), transparent 60%),
+                   linear-gradient(to bottom, rgba(0,0,0,.32), rgba(0,0,0,.52));
+        pointer-events:none;
+    }
+    .hero-title { font-weight: 700; margin-bottom: .5rem; text-shadow: 0 2px 18px rgba(0,0,0,.28); }
+
+    .accent { position: relative; display: inline-block; padding-bottom: .25rem; }
+    .accent::after {
+        content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px;
+        width: 72px; height: 2px; border-radius: 999px;
+        background: linear-gradient(90deg, rgba(255,255,255,.0) 0%, #ffffff 50%, rgba(255,255,255,.0) 100%);
+        opacity: .95;
+    }
+    .accent-dark::after {
+        background: linear-gradient(90deg, rgba(13,41,107,0) 0%, var(--brand) 50%, rgba(13,41,107,0) 100%);
+    }
+
+    .section-wrap { padding: 2rem; position:relative; }
+    .section-inner { max-width: 70ch; margin: 0 auto; text-align: left; }
+    .prose p {
+        font-size: 1.05rem; line-height: 1.9; letter-spacing: .01em; margin-bottom: 1.15rem;
+        color: #0f0f10; text-align: justify;
+    }
+    .section-wrap:not(:first-child)::before {
+        content:""; position:absolute; top:-1.5rem; left:0; right:0; height:1px;
+        background: linear-gradient(90deg, transparent, rgba(13,41,107,.12), transparent);
+    }
+
+    .figure { border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 22px rgba(0,0,0,.15); }
+    .figure img { display: block; width: 100%; height: auto; transition: transform .28s ease; }
+    .figure:hover img { transform: scale(1.015); }
+
+    .btn-ghost {
+        display: inline-flex; align-items: center; gap: .6rem;
+        padding: .68rem 1.15rem; border: 1px solid rgba(255,255,255,.85); color: #fff;
+        background: rgba(255,255,255,.085); border-radius: 999px;
+        backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 10px 28px rgba(0,0,0,.25); text-decoration: none; font-weight: 600; letter-spacing: .02em;
+        transition: transform .15s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: #ffffff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(0,0,0,.32); }
+    .btn-ghost i { transition: transform .18s ease; }
+    .btn-ghost:hover i { transform: translateX(4px); }
+    .btn-ghost:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+    .btn-ghost:active { transform: translateY(0); }
+
+    #mainHeader a { color:#fff; text-decoration:none; }
+
+    .header-icon {
+        display:inline-flex; align-items:center; justify-content:center;
+        width:40px; height:40px; border-radius:999px; margin-left:.5rem;
+        color:#fff; text-decoration:none; outline-offset:2px;
+    }
+    .header-icon i { font-size:1.5rem; line-height:1; }
+    .header-icon:focus-visible { outline:2px solid #fff; }
+    @media (hover:hover){ .header-icon:hover{ background: rgba(255,255,255,.12); } }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .footer-link { text-decoration: none; }
+    .footer-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    footer { position: relative; background: #0c0c0c; }
+    footer::before {
+        content:""; position:absolute; top:0; left:0; right:0; height:2px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent); opacity:.6;
+    }
+
+    a:focus-visible, button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+    #services { scroll-margin-top: 110px; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal, .figure img, .btn-ghost, .accent::after { transition: none; animation: none; }
+        html { scroll-behavior: auto; }
+    }
+
+    #backToTop { position: fixed; right: 16px; bottom: 16px; z-index: 1040; display: none; }
+    </style>
+</head>
+<body class="bg-dark text-dark">
+
+    <header id="mainHeader" class="text-white py-3 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-start mb-0">
+                <a href="#" class="text-white text-decoration-none" aria-label="Groth & Associates home">Groth & Associates</a>
+            </h1>
+            <div><a href="https://www.facebook.com/GrothLawyers/" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a><a href="https://www.linkedin.com/company/groth-associates" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a></div>
+        </div>
+    </header>
+
+    <section class="hero-section"
+             style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiOjLqur5Z_KEq_I4Cjtc2sdsWKQNynPHsvLKZO7aEZyZ4ECEYqn6Q7QyoaFYiQB218xH2u6KI6SlDvPXxq711AT8qelzY_LpDoD54n-SSPmia7CHhzK3vtZ6T5x1fR1mFjFg3=w1351'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+      <div class="container hero-content"
+           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white;">
+        <div class="d-flex flex-column align-items-center text-center">
+          <h2 class="hero-title accent mb-3">Groth & Associates</h2>
+          <a href="#services" class="btn-ghost" role="button" aria-label="Read more about services">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main style="background-color: #ffffff;">
+        <div class="container py-5" style="margin-top:0;">
+            <div id="services" class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Modern Solutions for Growing Firms</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Growing firms often need a practical way to align strategy, operations, and cash flow, and <a href="https://f005.backblazeb2.com/file/Lawfirm34/grothlawcom8/groth-associates.html" class="inline-link">Groth & Associates</a> can help leaders review priorities with greater clarity. By pairing structured analysis with an understanding of day-to-day constraints, Groth & Associates supports decisions that are more consistent and easier to implement.</p>
+                            <p>As teams expand, the pressure on internal processes increases, so organizations benefit from guidance that improves coordination without adding unnecessary complexity. In that setting, Groth & Associates can help identify gaps in workflow, while Groth & Associates encourages leaders to focus on the changes that will have the strongest operational impact.</p>
+                            <p>Long-term resilience depends on more than short-term fixes; it also requires habits that support accountability, communication, and measured growth. With a clear framework in place, Groth & Associates can assist firms in turning plans into steady progress while keeping attention on quality, efficiency, and client trust.</p>
+                            <figure class="figure mt-4">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipMmf5cn6H8uscLNWVes97lQJkUyHn8ROK_85-U5=w1351" loading="lazy" decoding="async" alt="Groth & Associates image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color: var(--brand);">
+                            <span class="accent accent-dark">Expert Counsel for Ambitious Businesses</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Ambitious organizations often reach a point where routine execution is no longer enough, and outside perspective can make priorities easier to sort. Groth & Associates may help leaders evaluate where attention will have the most effect, while Groth & Associates can add structure to discussions that might otherwise stay fragmented. That combination can support clearer choices across planning, resources, and growth initiatives.</p>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-6">
+                                    <p>When teams are expanding, the challenge is often less about ideas than about coordination. Groth & Associates can bring useful order to competing inputs, and Groth & Associates can help turn that information into next steps that are practical for the people responsible for carrying them out. The result is often a more consistent process for reviewing options and moving forward with confidence.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ratio ratio-16x9 mx-auto" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);">
+                                        <iframe src="https://www.youtube.com/embed/KEvWCQv7bwo?si=fIQ3w7JlJ7zMTMyA" loading="lazy" title="Groth & Associates video" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Long-term progress depends on advice that stays relevant as conditions change, not on generic answers that fade quickly. With Groth & Associates in the mix, organizations can approach decisions with a steadier understanding of tradeoffs, timing, and execution. That kind of support gives leaders a stronger base for planning today while staying ready for what comes next.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Groth Team Delivers Clear Direction</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Effective organizations rely on guidance that translates broad goals into practical next steps, and Groth & Associates can help leaders keep those goals visible as work moves forward. When teams need a steady framework for priorities, Groth & Associates can support conversations that are focused, organized, and easier to act on.</p>
+                            <p>That kind of support is especially useful when responsibilities stretch across departments and timing matters. In those situations, Groth & Associates can help align expectations, while Groth & Associates can encourage a more consistent approach to evaluating options, resolving gaps, and maintaining momentum.</p>
+                            <p>Long-term progress depends on more than good intentions; it requires communication, follow-through, and a willingness to adjust when conditions change. With that in mind, Groth & Associates can be a useful resource for organizations that want to turn complex information into decisions their teams can understand and implement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 reveal">
+                  <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                  <span class="accent accent-dark">
+                  <i class="bi bi-geo-alt" style="margin-right:.5rem;"></i>Groth & Associates</span>
+                  </h2>
+
+                    <div class="mb-4 ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.061112324473!2d-83.53628959999999!3d41.65442159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b86cdcd3cf3c9%3A0xeb2ad43a2667348b!2sGroth%20%26%20Associates!5e0!3m2!1sen!2sin!4v1778572904050!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="fw-bold" style="color: #000000;">Groth & Associates</p>
+                    <p style="color: #000000;">416 N Erie St, Suite 100, Toledo, OH 43604</p>
+                    <p style="color: #000000;">(419) 491-7362</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white bg-dark mt-5">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Groth & Associates</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="Groth-&-Associates.html" rel="noopener">Company Website</a></li>    <li><a class="link-light footer-link" href="https://www.grothlaw.com/" rel="noopener">https://www.grothlaw.com/</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Useful links</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="" rel="noopener">Modern Solutions for Growing Firms</a></li>    <li><a class="link-light footer-link" href="https://www.grothlaw.com/" rel="noopener">Expert Counsel for Ambitious Businesses</a></li>    <li><a class="link-light footer-link" href="https://maps.app.goo.gl/CQDTxhpVX3TyAmNaA" rel="noopener">Groth Team Delivers Clear Direction</a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Follow us on Social Media</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="https://www.facebook.com/GrothLawyers/" rel="noopener">Facebook</a></li>    <li><a class="link-light footer-link" href="https://www.linkedin.com/company/groth-associates" rel="noopener">Linkedin</a></li>    <li><a class="link-light footer-link" href="https://www.youtube.com/@grothassociates2625" rel="noopener">Youtube</a></li>  </ul></div>
+            </div>
+            <div class="mt-4">
+                <rssapp-wall id="UVt1Tybso99Cby17"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTop" href="#top" class="btn btn-light rounded-pill shadow-sm px-3 py-2" aria-label="Back to top">↑ Top</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var header = document.getElementById("mainHeader");
+        var backToTop = document.getElementById("backToTop");
+        var reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener("scroll", function() {
+            var scrolled = window.scrollY > 50;
+            header.classList.toggle("scrolled", scrolled);
+            backToTop.style.display = window.scrollY > 600 ? "inline-flex" : "none";
+        });
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        } else {
+            reveals.forEach(el => el.classList.add('visible'));
+        }
+    });
+    </script>
+
+</body>
+</html>
